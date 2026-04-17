@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arun | Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0f172a;
+    color: white;
+}
+
+/* NAVBAR */
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(0,0,0,0.6);
+    text-align: center;
+    padding: 15px;
+    backdrop-filter: blur(10px);
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* HERO */
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #2563eb, #06b6d4);
+    text-align: center;
+    animation: fadeIn 2s ease;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background: white;
+    color: #0f172a;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.card {
+    background: #1e293b;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 600px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* SKILLS */
+.skills span {
+    display: inline-block;
+    background: #38bdf8;
+    color: black;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    background: #020617;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<header>
+    <h1>Hi, I'm Arun</h1>
+    <p>Electronics Service Engineer | ERP & Inventory Specialist</p>
+    <a href="#contact"><button>Contact Me</button></a>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+            I am an Electronics Service Engineer with nearly 5 years of experience 
+            in troubleshooting and maintaining electronic products.
+            <br><br>
+            I also have strong ERP knowledge, managing inventory and ensuring smooth operations.
+            <br><br>
+            I have led a team of 10 members, improving productivity and workflow efficiency.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="card skills">
+        <span>Electronics Repair</span>
+        <span>ERP Software</span>
+        <span>Inventory Management</span>
+        <span>Team Leadership</span>
+        <span>Problem Solving</span>
+        <span>Maintenance</span>
+    </div>
+</section>
+
+<section id="experience">
+    <h2>Experience</h2>
+    <div class="card">
+        <h3>Electronics Service Engineer</h3>
+        <p>5 Years Experience</p>
+        <br>
+        <p>
+            • Diagnosed and repaired electronic products  
+            <br>• Managed inventory using ERP system  
+            <br>• Reduced downtime through maintenance  
+            <br>• Led a team of 10 technicians  
+        </p>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Key Work Highlights</h2>
+
+    <div class="card">
+        <h3>Inventory Management Optimization</h3>
+        <p>Improved stock tracking and reduced shortages using ERP.</p>
+    </div>
+
+    <div class="card">
+        <h3>Service Process Improvement</h3>
+        <p>Reduced repair time by streamlining workflow.</p>
+    </div>
+
+    <div class="card">
+        <h3>Team Productivity Enhancement</h3>
+        <p>Successfully managed a team of 10 members to improve efficiency.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Email: your@email.com</p>
+        <p>Phone: +91-XXXXXXXXXX</p>
+        <p>Location: Tamil Nadu, India</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Arun</p>
+</footer>
+
+</body>
+</html>

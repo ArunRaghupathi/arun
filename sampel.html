@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stylish Portfolio</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background: #0f172a;
+        color: white;
+    }
+
+    header {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #6366f1, #06b6d4);
+        text-align: center;
+        animation: fadeIn 2s ease-in;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+
+    header p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(0,0,0,0.6);
+        padding: 10px;
+        text-align: center;
+        backdrop-filter: blur(10px);
+    }
+
+    nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #06b6d4;
+    }
+
+    section {
+        padding: 80px 20px;
+        text-align: center;
+    }
+
+    .card {
+        background: #1e293b;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 15px;
+        width: 80%;
+        max-width: 500px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 25px;
+        background: linear-gradient(45deg, #06b6d4, #6366f1);
+        color: white;
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+
+    button:hover {
+        transform: scale(1.1);
+    }
+
+    footer {
+        padding: 20px;
+        text-align: center;
+        background: #020617;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(20px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+</style>
+
+</head>
+<body>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<header>
+    <h1>Your Arun Raghupathi</h1>
+    <p>cloud Engineer 🚀</p>
+    <br>
+    <a href="#projects"><button>View My Work</button></a>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>I build modern, responsive websites with smooth animations and clean UI.</p>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>Project One</h3>
+        <p>Cool web app with animations.</p>
+    </div>
+
+    <div class="card">
+        <h3>Project Two</h3>
+        <p>Responsive website design.</p>
+    </div>
+
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Email: rarun1196@gmail.com</p>
+        <button>Say Hello</button>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Your Name</p>
+</footer>
+
+</body>
+</html>
